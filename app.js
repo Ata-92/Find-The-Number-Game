@@ -15,7 +15,7 @@ function numberCheck() {
     alert("Please enter a number : ");
   } else {
     if (attempt[1] > 0) {
-      if (input.value < 1 || input.value > 99 || isNaN(input.value)) {
+      if (input.value < 1 || input.value > 99 || isNaN(input.value) || parseInt(input.value) != input.value) {
         confirm(`Your entry ${input.value} is invalid.\nPlease enter an integer number : `);
         attempt[0] += 1;
         attempt[1] -= 1;

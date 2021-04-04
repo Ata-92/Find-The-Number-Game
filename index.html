@@ -8,13 +8,17 @@
   <title>Guess Number</title>
 </head>
 <body>
-  <h1>Guess The Number (1 - 99)</h1>
-  <div class="input-box">
-    <input type="number"><button>CHECK</button>
+  <div class="container">
+    <h1 class="container__big-heading">Guess The Number (1 - 99)</h1>
+    <div class="container__box">
+      <input class="container__box--input" type="number" name="guess" min="1" max="99">
+      <button class="container__box--button">CHECK</button>
+    </div>
+    <img class="container__img" src="" alt="">
+    <h3 class="container__small-heading">Write the number</h3>
+    <p class="container__text">Used attempts : <span class="container__text--used">0</span></p>
+    <p class="container__text-remaining">Remaining attempts : <span class="container__text--remaining">10</span></p>
   </div>
-  <img src="" alt="">
-  <h3>Write the number</h3>
-  <p id="attempt"></p>
   <script src="app.js"></script>
 </body>
 </html>
