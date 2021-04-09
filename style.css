@@ -5,9 +5,17 @@ body {
 }
 
 .container, h1, h3, p {
-  width: 50%;
+  width: 60%;
   margin: 3rem auto;
   text-align: center;
+}
+
+h1 {
+  color: sienna;
+}
+
+h3 {
+  color: crimson;
 }
 
 input {
