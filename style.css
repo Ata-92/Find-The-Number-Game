@@ -14,10 +14,6 @@ h1 {
   color: sienna;
 }
 
-h3 {
-  color: crimson;
-}
-
 input {
   width: 10rem;
   padding: .5rem;
@@ -33,4 +29,24 @@ button {
   outline: none;
   border-radius: 1rem;
   cursor: pointer;
+}
+
+h3 {
+  color: crimson;
+}
+
+.container__text--used {
+  color: white;
+  background-color: blue;
+  padding: .5rem;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.container__text--remaining {
+  color: white;
+  background-color: red;
+  padding: .5rem;
+  font-weight: bold;
+  font-size: xx-large;
 }
