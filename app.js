@@ -7,6 +7,12 @@ const button = document.querySelector("div > button");
 const used = document.getElementsByClassName("container__text--used")[0];
 const remaining = document.getElementsByClassName("container__text--remaining")[0];
 
+input.addEventListener("input", () => {
+  if (input.value.length > 2) {
+    input.value = input.value.slice(0, 2);
+  }
+})
+
 input.addEventListener("keydown", (key) => {
   if (key.code == "Enter") {
     numberCheck();
