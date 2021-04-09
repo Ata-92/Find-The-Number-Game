@@ -27,11 +27,9 @@ function numberCheck() {
   if (input.value == "") {
     alert("Please enter a number : ");
   } else if (attempt[1] > 1 && input.value != number) {
-    if (input.value < 1 || input.value > 99 || isNaN(input.value) || parseInt(input.value) != input.value) {
-      confirm(`Your entry ${input.value} is invalid.\nPlease enter an integer number : `);
-    } else if (input.value < number) {
+      if (input.value < number) {
       alert(`Your guess ${input.value} is low`);
-    } else if (input.value > number) {
+    } else {
       alert(`Your guess ${input.value} is high`);
     }
     input.value = "";
