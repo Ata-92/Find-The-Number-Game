@@ -16,7 +16,7 @@ input.addEventListener("input", () => {
 input.addEventListener("keydown", (inputKey) => {
   if (inputKey.code == "Enter") {
     numberCheck();
-  } else if (["e", "E", "+", "-"].includes(inputKey.key)) {
+  } else if (["e", "E", "+", "-", ",", "."].includes(inputKey.key)) {
     inputKey.preventDefault();
   }
 });
