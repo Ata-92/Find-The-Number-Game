@@ -13,9 +13,11 @@ input.addEventListener("input", () => {
   }
 })
 
-input.addEventListener("keydown", (key) => {
-  if (key.code == "Enter") {
+input.addEventListener("keydown", (inputKey) => {
+  if (inputKey.code == "Enter") {
     numberCheck();
+  } else if (["e", "E", "+", "-"].includes(inputKey.key)) {
+    inputKey.preventDefault();
   }
 });
 
